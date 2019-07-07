@@ -1,4 +1,9 @@
+require 'byebug'
+
 def count_elements(array)
-  # code goes here
+  res={}
+  array.each do |x|
+    res["#{x}"] ? res["#{x}"]+=1 : res["#{x}"]=1
+  end
+  res
 end
- 
